@@ -2,16 +2,16 @@
 
 # number
 number = 3
-puts number
+puts number #3
 
 # string
 string = "I am a string value type"
-p string
+p string #"I am a string value type"
 
 # boolean
 boolean = true
 boolean = !true
-puts boolean
+puts boolean #false
 
 # hash
 hash = {
@@ -19,7 +19,7 @@ hash = {
   number: 21,
   age: 38
 }
-puts hash[:name], hash[:number], hash[:age]
+puts hash[:name], hash[:number], hash[:age] 
 
 # array
 arr = [1,2,"pick me",4]
@@ -90,17 +90,18 @@ user = [{
   is_the_best: true
 }]
 if user[0][:name] == "Lance" || user[:is_the_best] == true
-  puts "#{user[0][:name]} is the best!"
+  puts "#{user[1][:name]} is the best!"
   elsif user[0][:name] == "Lance" || user[:is_the_best] == false
-  puts "#{user[0][:name]} is not the best."
+  puts "#{user[1][:name]} is not the best."
 end
 
 # Operator/ if statement example
-age = 30
-if age < 30 == true
-  puts "I am less than #{age} years old."
-elsif age > 30 == true
-  puts "I am older than #{age} years old. "
+AGE = 30
+user_age = 38
+if user_age < 30 == true
+  puts "I am less than #{AGE} years old."
+elsif user_age > 30 == true
+  puts "I am older than #{AGE} years old. "
 else 
-  puts "I am #{age} years old."
+  puts "I am #{user_age} years old."
 end
